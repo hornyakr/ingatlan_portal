@@ -9,14 +9,12 @@ type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes
 
 
-interface ParamMap {
-}
+type ParamMap = object
 
 
 export type ParamsOf<Route extends Routes> = ParamMap[Route]
 
-interface LayoutSlotMap {
-}
+type LayoutSlotMap = object
 
 
 export type { AppRoutes, PageRoutes, LayoutRoutes, RedirectRoutes, RewriteRoutes, ParamMap }
